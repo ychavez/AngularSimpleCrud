@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\DW\\AngularSimpleCrud\\api\\ProductsService\\ProductsService.csproj": {}
+    "d:\\DW\\AngularSimpleCrud\\Api\\ProductsService\\ProductsService.csproj": {}
   },
   "projects": {
-    "D:\\DW\\AngularSimpleCrud\\api\\ProductsService\\ProductsService.csproj": {
+    "d:\\DW\\AngularSimpleCrud\\Api\\ProductsService\\ProductsService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\DW\\AngularSimpleCrud\\api\\ProductsService\\ProductsService.csproj",
+        "projectUniqueName": "d:\\DW\\AngularSimpleCrud\\Api\\ProductsService\\ProductsService.csproj",
         "projectName": "ProductsService",
-        "projectPath": "D:\\DW\\AngularSimpleCrud\\api\\ProductsService\\ProductsService.csproj",
+        "projectPath": "d:\\DW\\AngularSimpleCrud\\Api\\ProductsService\\ProductsService.csproj",
         "packagesPath": "C:\\Users\\Yael\\.nuget\\packages\\",
-        "outputPath": "D:\\DW\\AngularSimpleCrud\\api\\ProductsService\\obj\\",
+        "outputPath": "d:\\DW\\AngularSimpleCrud\\Api\\ProductsService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\Offline Packages",
@@ -49,6 +49,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[5.0.0, )",
@@ -62,6 +66,20 @@
               "noWarn": [
                 "NU1605"
               ]
+            },
+            "Microsoft.Data.Sqlite.Core": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.1, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
