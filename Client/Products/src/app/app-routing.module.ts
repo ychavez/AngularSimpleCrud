@@ -10,19 +10,19 @@ const routes: Routes = [
 //   component: AppComponent
 // },
 
-{
-  path: 'accordion',
-  loadChildren: () => import('./+accordion/accordion.module').then(m => m.AccordionModule),
-  data: {
-    title: 'Accordion'
-  }
-}, {
-  path: 'alert',
-  loadChildren: () => import('./+alert/alert.module').then(m => m.AlertModule),
-  data: {
-    title: 'Alert',
-  }
-},
+// {
+//   path: 'accordion',
+//   loadChildren: () => import('./+accordion/accordion.module').then(m => m.AccordionModule),
+//   data: {
+//     title: 'Accordion'
+//   }
+// }, {
+//   path: 'alert',
+//   loadChildren: () => import('./+alert/alert.module').then(m => m.AlertModule),
+//   data: {
+//     title: 'Alert',
+//   }
+// },
 {
   path: 'yaelito',
   loadChildren: () => import('./yaelito/yaelito.module').then(m => m.YaelitoModule),
