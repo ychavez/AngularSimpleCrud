@@ -22,7 +22,17 @@ const routes: Routes = [
   data: {
     title: 'Alert',
   }
-}];
+},
+{
+  path: 'Yaelito',
+  loadChildren: () => import('./yaelito/yaelito.module').then(m => m.YaelitoModule),
+  data: {
+    title: 'Yaelito',
+  }
+}
+
+
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
