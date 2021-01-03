@@ -1,6 +1,6 @@
 import {Component, AfterViewInit, NgZone, ChangeDetectorRef, ViewRef} from '@angular/core';
 
-import * as Prism from 'prismjs';
+
 
 @Component({
   selector: 'app-accordion',
@@ -19,7 +19,7 @@ export class AccordionComponent implements AfterViewInit {
    * @method ngAfterViewInit
    */
   ngAfterViewInit() {
-    Prism.highlightAll();
+   
 
     this.ngZone.runOutsideAngular(() => {
       setTimeout(() => {

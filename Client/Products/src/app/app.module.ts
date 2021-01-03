@@ -10,7 +10,7 @@ import { LayoutModule } from 'angular-admin-lte';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-
+import { LoadingPageModule, MaterialBarModule } from 'angular-loading-page';
 
 
 @NgModule({
@@ -18,7 +18,8 @@ import { HomeComponent } from './home/home.component';
     BrowserModule,
     AppRoutingModule,
     CoreModule,
-    LayoutModule.forRoot(adminLteConf)
+    LayoutModule.forRoot(adminLteConf),
+    LoadingPageModule, MaterialBarModule
   ],
   declarations: [
     AppComponent,

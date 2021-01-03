@@ -1,6 +1,6 @@
 import { Component, AfterViewInit } from '@angular/core';
 
-import * as Prism from 'prismjs';
+
 
 @Component({
   selector: 'app-alert',
@@ -12,6 +12,6 @@ export class AlertComponent implements AfterViewInit {
    * @method ngAfterViewInit
    */
   ngAfterViewInit() {
-    Prism.highlightAll();
+   
   }
 }
