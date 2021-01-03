@@ -24,7 +24,7 @@ const routes: Routes = [
   }
 },
 {
-  path: 'Yaelito',
+  path: 'yaelito',
   loadChildren: () => import('./yaelito/yaelito.module').then(m => m.YaelitoModule),
   data: {
     title: 'Yaelito',

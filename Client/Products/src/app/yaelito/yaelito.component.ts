@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-yaelito',
   templateUrl: './yaelito.component.html',
@@ -11,5 +12,7 @@ export class YaelitoComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  helloWorld() {
+    alert('Hello world!');
+}
 }

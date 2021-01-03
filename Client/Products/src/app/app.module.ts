@@ -11,6 +11,7 @@ import { LayoutModule } from 'angular-admin-lte';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { LoadingPageModule, MaterialBarModule } from 'angular-loading-page';
+import { DxButtonModule } from 'devextreme-angular';
 
 
 
@@ -23,7 +24,8 @@ import { LoadingPageModule, MaterialBarModule } from 'angular-loading-page';
     AppRoutingModule,
     CoreModule,
     LayoutModule.forRoot(adminLteConf),
-    LoadingPageModule, MaterialBarModule
+    LoadingPageModule, MaterialBarModule,
+    DxButtonModule
   ],
   declarations: [
     AppComponent,
