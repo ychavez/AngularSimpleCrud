@@ -1,10 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\Yael\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\Yael\\.nuget\\packages",
-      "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\Offline Packages",
-      "C:\\Microsoft\\Xamarin\\NuGet"
+      "/Users/yael.bernache/.dotnet/store/|arch|/|tfm|",
+      "/Users/yael.bernache/.nuget/packages"
     ]
   }
 }

@@ -12,6 +12,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { LoadingPageModule, MaterialBarModule } from 'angular-loading-page';
 import { DxButtonModule } from 'devextreme-angular';
+import { ProductsComponent } from './products/products.component';
 
 
 
@@ -24,13 +25,11 @@ import { DxButtonModule } from 'devextreme-angular';
     AppRoutingModule,
     CoreModule,
     LayoutModule.forRoot(adminLteConf),
-    LoadingPageModule, MaterialBarModule,
-    DxButtonModule
+    LoadingPageModule, MaterialBarModule
   ],
   declarations: [
     AppComponent,
     HomeComponent
-
   ],
   bootstrap: [AppComponent]
 })

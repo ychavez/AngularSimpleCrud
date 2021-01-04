@@ -11,7 +11,7 @@ export const adminLteConf = {
   sidebarLeftMenu: [
     {label: 'Angular Simple Crud', separator: true},
     {label: 'Products', iconClasses: 'fa fa-cube', children: [
-        {label: 'Products list', route: 'yaelito'},
+        {label: 'Products list', route: 'products'},
         {label: 'Product Types', route: './'},
         // {label: 'Header', route: 'layout/header'},
         // {label: 'Sidebar Left', route: 'layout/sidebar-left'},

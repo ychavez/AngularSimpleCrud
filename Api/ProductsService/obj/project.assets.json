@@ -1728,37 +1728,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Yael\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\Offline Packages": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "/Users/yael.bernache/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\DW\\AngularSimpleCrud\\Api\\ProductsService\\ProductsService.csproj",
+      "projectUniqueName": "/Users/yael.bernache/Documents/GitHub/AngularSimpleCrud/Api/ProductsService/ProductsService.csproj",
       "projectName": "ProductsService",
-      "projectPath": "d:\\DW\\AngularSimpleCrud\\Api\\ProductsService\\ProductsService.csproj",
-      "packagesPath": "C:\\Users\\Yael\\.nuget\\packages\\",
-      "outputPath": "d:\\DW\\AngularSimpleCrud\\Api\\ProductsService\\obj\\",
+      "projectPath": "/Users/yael.bernache/Documents/GitHub/AngularSimpleCrud/Api/ProductsService/ProductsService.csproj",
+      "packagesPath": "/Users/yael.bernache/.nuget/packages/",
+      "outputPath": "/Users/yael.bernache/Documents/GitHub/AngularSimpleCrud/Api/ProductsService/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\Offline Packages",
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Yael\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.1.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.2.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "/Users/yael.bernache/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\DevExpress 20.1\\Components\\System\\Components\\Packages": {},
-        "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\System\\Components\\Packages": {},
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1832,7 +1819,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.100-rc.2.20479.15/RuntimeIdentifierGraph.json"
       }
     }
   }

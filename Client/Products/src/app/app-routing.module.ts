@@ -24,10 +24,10 @@ const routes: Routes = [
 //   }
 // },
 {
-  path: 'yaelito',
-  loadChildren: () => import('./yaelito/yaelito.module').then(m => m.YaelitoModule),
+  path: 'products',
+  loadChildren: () => import('./products/products.module').then(m => m.ProductsModule),
   data: {
-    title: 'Yaelito',
+    title: 'Products',
   }
 }
 
