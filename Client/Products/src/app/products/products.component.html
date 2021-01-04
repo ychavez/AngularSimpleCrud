@@ -1,13 +1,10 @@
 <p>yaelito works!</p>
-<dx-button
-    text="Click me"
-    (onClick)="helloWorld()">
+<dx-button text="Click me" (onClick)="helloWorld()">
 </dx-button>
-<dx-data-grid
-    id="gridContainer"
-    [dataSource]="products"
-    [allowColumnReordering]="true"
-    [showBorders]="true">
+<dx-data-grid #grid id="gridContainer" [dataSource]="products" keyExpr="id" [hoverStateEnabled]="true"
+    [allowColumnReordering]="true" [showBorders]="true">
+    <dxo-selection mode="single"></dxo-selection>
+
 
     <dxi-column dataField="id"></dxi-column>
     <dxi-column dataField="code"></dxi-column>
@@ -21,12 +18,6 @@
     <dxo-grouping #expand [autoExpandAll]="true"></dxo-grouping>
 </dx-data-grid>
 
-<!-- <div class="options">
-    <div class="caption">Options</div>
-    <div class="option">
-        <dx-check-box
-            [(value)]="expand.autoExpandAll"
-            text="Expand All Groups">
-        </dx-check-box>
-    </div>
-</div> -->
+<div id="employeeInfo" *ngIf="grid.selectedRowKeys.length">
+    <p class="employeeNotes">{{grid.instance.getSelectedRowsData()[0].description}}</p>
+</div>
