@@ -30,7 +30,7 @@ namespace ProductsService
             services.AddDbContext<ProductsContext>(Options =>
             {
                 Options.UseSqlite(Configuration.GetConnectionString("DefaultConnection"));
-                Options.LogTo(Console.WriteLine); 
+                Options.LogTo(Console.WriteLine);
             });
             services.AddControllers();
             services.AddSwaggerGen(c =>
@@ -52,6 +52,7 @@ namespace ProductsService
             app.UseHttpsRedirection();
 
             app.UseRouting();
+            app.UseCors(options => options.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 
             app.UseAuthorization();
 

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DxDataGridModule, DxCheckBoxModule } from 'devextreme-angular';
+import { product } from '../_models/product';
+import { ProductService } from '../_services/product.service';
 import { Customer, Service } from './yaeliyo.service';
 
 
@@ -11,10 +13,12 @@ import { Customer, Service } from './yaeliyo.service';
 })
 export class YaelitoComponent implements OnInit {
 
-  customers: Customer[];
+  products: product[];
 
-  constructor(service: Service) {
-      this.customers = service.getCustomers();
+  constructor(service: ProductService) {
+      service.getProducts().subscribe(products =>{
+        this.products = products
+      });
   }
 
   ngOnInit() {
