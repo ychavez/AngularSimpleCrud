@@ -13,6 +13,7 @@ import { HomeComponent } from './home/home.component';
 import { LoadingPageModule, MaterialBarModule } from 'angular-loading-page';
 import { DxButtonModule } from 'devextreme-angular';
 import { ProductsComponent } from './products/products.component';
+import { LoginComponent } from './login/login.component';
 
 
 
@@ -29,7 +30,8 @@ import { ProductsComponent } from './products/products.component';
   ],
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    LoginComponent
   ],
   bootstrap: [AppComponent]
 })

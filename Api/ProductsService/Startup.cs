@@ -2,7 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Api.Interfaces;
 using Api.ProductsService.DataContext;
+using Api.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -33,6 +35,7 @@ namespace ProductsService
                 Options.LogTo(Console.WriteLine);
             });
             services.AddControllers();
+            services.AddScoped<ITokenService, TokenService>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "ProductsService", Version = "v1" });
@@ -53,6 +56,8 @@ namespace ProductsService
 
             app.UseRouting();
             app.UseCors(options => options.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+
+            app.UseAuthentication();
 
             app.UseAuthorization();
 
