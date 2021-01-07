@@ -40,11 +40,15 @@ ng serve
 ````
 
 ## Built with 🛠️´
-[angular-admin-lte](https://www.npmjs.com/package/angular-admin-lte) - a very cool front end free template
-[DevExtreme for Angular](https://js.devexpress.com/Overview/Angular/) - cool components for Angular
+*[angular-admin-lte](https://www.npmjs.com/package/angular-admin-lte) - a very cool front end free template
+
+*[DevExtreme for Angular](https://js.devexpress.com/Overview/Angular/) - cool components for Angular
 
 ## Wiki 📖
 Wiki is under construction
+
+## Training
+*[A cool Angular + dotnet 5 course](https://www.udemy.com/course/build-an-app-with-aspnet-core-and-angular-from-scratch/)
 
 
 
