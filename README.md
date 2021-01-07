@@ -4,7 +4,7 @@ _Simple Crud example using Angular 10 and dotnet 5 with the awesome Admin LTE te
 ## Get started 🚀
 _Install the lastest version of Angular cli and .NET 5, it will be necesary to run the project_
 
-### requirements 📋
+### Requirements 📋
 _this is the complete list of components you need to run the project_
 
 _.NET5 SDK_
@@ -39,7 +39,7 @@ _then open a new terminal and go to Client/Products and run the angular project 
 ng serve
 ````
 
-## built with 🛠️´
+## Built with 🛠️´
 [angular-admin-lte](https://www.npmjs.com/package/angular-admin-lte) - a very cool front end free template
 [DevExtreme for Angular](https://js.devexpress.com/Overview/Angular/) - cool components for Angular
 
