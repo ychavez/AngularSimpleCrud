@@ -13,6 +13,7 @@ export const adminLteConf = {
     {label: 'Products', iconClasses: 'fa fa-cube', children: [
         {label: 'Products list', route: 'products'},
         {label: 'Product Types', route: './'},
+        {label: 'login', route: 'login'},
         // {label: 'Header', route: 'layout/header'},
         // {label: 'Sidebar Left', route: 'layout/sidebar-left'},
         // {label: 'Sidebar Right', route: 'layout/sidebar-right'},

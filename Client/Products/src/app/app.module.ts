@@ -14,6 +14,7 @@ import { LoadingPageModule, MaterialBarModule } from 'angular-loading-page';
 import { DxButtonModule } from 'devextreme-angular';
 import { ProductsComponent } from './products/products.component';
 import { LoginComponent } from './login/login.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -26,7 +27,8 @@ import { LoginComponent } from './login/login.component';
     AppRoutingModule,
     CoreModule,
     LayoutModule.forRoot(adminLteConf),
-    LoadingPageModule, MaterialBarModule
+    LoadingPageModule, MaterialBarModule, 
+    FormsModule
   ],
   declarations: [
     AppComponent,

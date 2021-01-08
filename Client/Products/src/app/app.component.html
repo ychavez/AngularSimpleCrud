@@ -1,33 +1,36 @@
-
-<ng-container *ngIf="customLayout; else noCustomLayout">
-  <router-outlet></router-outlet>
-</ng-container>
-<ng-template #noCustomLayout>
-  <mk-layout-wrapper>
-    <mk-layout-header logoLink="/">
-      <mk-layout-header-logo><b>Simple</b>CRUD</mk-layout-header-logo>
-      <mk-layout-header-logo-mini><b>S</b>CRURD</mk-layout-header-logo-mini>
-      <app-header-inner></app-header-inner>
-    </mk-layout-header>
-    <mk-layout-sidebar-left>
-      <app-sidebar-left-inner></app-sidebar-left-inner>
-    </mk-layout-sidebar-left>
-
-    <mk-layout-content class="dx-viewport">
+<ng-container *ngIf="(accountService.currenUser$ |async)!=null" > 
+  <ng-container *ngIf="customLayout; else noCustomLayout">
+    <router-outlet></router-outlet>
+  </ng-container>
+  <ng-template #noCustomLayout>
+    <mk-layout-wrapper>
+      <mk-layout-header logoLink="/">
+        <mk-layout-header-logo><b>Simple</b>CRUD</mk-layout-header-logo>
+        <mk-layout-header-logo-mini><b>S</b>CRURD</mk-layout-header-logo-mini>
+        <app-header-inner></app-header-inner>
+      </mk-layout-header>
+      <mk-layout-sidebar-left>
+        <app-sidebar-left-inner></app-sidebar-left-inner>
+      </mk-layout-sidebar-left>
       
-      <div mk-layout-content-before-header>
-
-      </div>
-      <router-outlet></router-outlet>
-    </mk-layout-content>
-    <mk-layout-footer>
-      <mk-layout-footer-left>
-        <strong>Powered by <a href="http://almsaeedstudio.com">AdminLte</a>.</strong>
-      </mk-layout-footer-left>
-      <mk-layout-footer-right>
-        <b>Version</b> 2.4.2
-      </mk-layout-footer-right>
-    </mk-layout-footer>
-  </mk-layout-wrapper>
-</ng-template>
-
+      <mk-layout-content class="dx-viewport">
+        
+        <div mk-layout-content-before-header>
+          
+        </div>
+        <router-outlet></router-outlet>
+      </mk-layout-content>
+      <mk-layout-footer>
+        <mk-layout-footer-left>
+          <strong>Powered by <a href="http://almsaeedstudio.com">AdminLte</a>.</strong>
+        </mk-layout-footer-left>
+        <mk-layout-footer-right>
+          <b>Version</b> 2.4.2
+        </mk-layout-footer-right>
+      </mk-layout-footer>
+    </mk-layout-wrapper>
+  </ng-template>
+</ng-container>
+<ng-container *ngIf="(accountService.currenUser$ |async)==null" >
+  <app-login></app-login>
+</ng-container>

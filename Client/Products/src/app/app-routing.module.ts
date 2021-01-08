@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
+import { LoginComponent } from './login/login.component';
 
 
 const routes: Routes = [
@@ -16,19 +17,17 @@ const routes: Routes = [
 //   data: {
 //     title: 'Accordion'
 //   }
-// }, {
-//   path: 'alert',
-//   loadChildren: () => import('./+alert/alert.module').then(m => m.AlertModule),
-//   data: {
-//     title: 'Alert',
-//   }
-// },
+//}, 
+
+  {path:'login', component:LoginComponent, pathMatch:'full'},
+
 {
   path: 'products',
   loadChildren: () => import('./products/products.module').then(m => m.ProductsModule),
   data: {
     title: 'Products',
   }
+  
 }
 
 

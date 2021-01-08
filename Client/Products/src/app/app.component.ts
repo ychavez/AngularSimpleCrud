@@ -1,6 +1,7 @@
 
 import { Component, OnInit } from '@angular/core';
 import { LayoutService } from 'angular-admin-lte';
+import { AccountService } from './_services/account.service';
 
 
 @Component({
@@ -11,7 +12,8 @@ export class AppComponent implements OnInit {
   public customLayout: boolean;
 
   constructor(
-    private layoutService: LayoutService
+    private layoutService: LayoutService,
+    public accountService: AccountService
   ) {}
 
   ngOnInit() {
