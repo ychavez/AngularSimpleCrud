@@ -2,39 +2,28 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
-
+import { AuthGuard } from './_guards/auth.guard';
 
 const routes: Routes = [
-//for default layout
-  //   {
-//   path: '',
-//   component: AppComponent
-// },
-
-// {
-//   path: 'accordion',
-//   loadChildren: () => import('./+accordion/accordion.module').then(m => m.AccordionModule),
-//   data: {
-//     title: 'Accordion'
-//   }
-//}, 
-
-  {path:'login', component:LoginComponent, pathMatch:'full'},
-
-{
-  path: 'products',
-  loadChildren: () => import('./products/products.module').then(m => m.ProductsModule),
-  data: {
-    title: 'Products',
-  }
-  
-}
-
-
+  {
+    path: '',
+    runGuardsAndResolvers: 'always',
+    canActivate: [AuthGuard],
+    children: [
+      {
+        path: 'products',
+        loadChildren: () =>
+          import('./products/products.module').then((m) => m.ProductsModule),
+        data: {
+          title: 'Products',
+        },
+      }
+    ],
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
